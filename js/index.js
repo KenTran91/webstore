@@ -269,10 +269,10 @@ return `<section class="product ${productsCoffee.type}">
 function renderProducts(arr){
     const arrOfHtml = arr.map(getProductsCoffeeAsHtmlString);
     const strOfHtml = arrOfHtml.join(`\n`);
-    document.getElementById(`productsCoffee`).innerHTML +=strOfHtml;
+    document.getElementById(`productsCoffee`).innerHTML =strOfHtml;
 }
 
- 
+
 /////Function: FILTER
 function filterByName(proCoffee) {  
     return proCoffee.name.toLowerCase().includes(this.trim().toLowerCase())
