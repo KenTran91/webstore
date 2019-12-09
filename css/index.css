@@ -262,7 +262,13 @@ main {
     
 }
 
-
+.num_pro{
+    height: 3rem;
+    width: 5rem;;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 1rem 1rem 6rem grey;
+}
 .buy--btn {
 	padding: 1.5em 3.1em;
 	border: none;

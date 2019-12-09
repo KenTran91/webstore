@@ -10,8 +10,8 @@ const productsCoffee=[
     priceNew:`1.99`,
     rating:`3`,
     Calories:`110`,
-},
-    {id:`BC901`,
+},{
+    id:`BC901`,
     type: `Brewed-Coffees`,
     img: `img/product1.jpeg`,
     name: `True North Blend™ Blonde Roast`,
@@ -19,19 +19,17 @@ const productsCoffee=[
     priceNew: `3.99`,
     rating:`4`,
     Calories:`130`
-},
-
-    {id:`BC902`,
-    type: `Brewed -Coffees`,
+},{
+    id:`BC902`,
+    type: `Brewed-Coffees`,
     img: `img/product2.jpg`,
     name: `Decaf Pike Place® Roast`,
     description: `Our signature medium roasted coffee with a smooth, balanced and rich flavour, minus the caffeine.`,
     priceNew: `1.99`,
     rating:`4`,
     Calories:`70`
-},
-  
-    {id:`BC903`,
+},{
+    id:`BC903`,
     type: `Brewed-Coffees`,
     img: `img/product3.jpg`,
     name: `Pike Place® Roast`,
@@ -39,18 +37,17 @@ const productsCoffee=[
     priceNew: `1.79`,
     rating:`4`,
     Calories:`60`
-},
-
-    {id:`BC904`,
-    type: `Brewed Coffees`,
+},{
+    id:`BC904`,
+    type: `Brewed-Coffees`,
     img: `img/product4.jpg`,
     name: `Featured Dark Roast`,
     description: `This full-bodied dark roast coffee has the bold, robust flavors to showcase our roasting and blending artistry.`,
     priceNew: `1.69`,
     rating:`4`,
     Calories:`79`
-},
-    {id:`AM905`,
+},{
+    id:`AM905`,
     type: `Americano`,
     img: `img/product5.jpg`,
     name: `Irish Cream Americano`,
@@ -58,8 +55,8 @@ const productsCoffee=[
     priceNew: `2.59`,
     rating:`4`,
     Calories:`68`,
-},
-    {id:`AM906`,
+},{
+    id:`AM906`,
     type: `Americano`,
     img: `img/product6.jpg`,
     name: `Caffè Americano`,
@@ -67,8 +64,8 @@ const productsCoffee=[
     priceNew: `3.59`,
     rating:`5`,
     Calories:`77`,
-},
-    {id:`CA907`,
+},{
+    id:`CA907`,
     type: `Cappuccino`,
     img: `img/product7.jpg`,
     name: `Cappuccino`,
@@ -76,8 +73,8 @@ const productsCoffee=[
     priceNew: `4.59`,
     rating:`5`,
     Calories:`120`,
-},
-    {id:`ES908`,
+},{
+    id:`ES908`,
     type: `Espresso`,
     img: `img/product8.jpg`,
     name: `Espresso`,
@@ -85,8 +82,8 @@ const productsCoffee=[
     price: `3.29`,
     rating:`5`,
     Calories:`10`,
-},
-    {id:`LT909`,
+},{
+    id:`LT909`,
     type: `Latte`,
     img: `img/product9.jpg`,
     name: `Chestnut Praline Latte`,
@@ -94,8 +91,8 @@ const productsCoffee=[
     priceNew: `6.29`,
     rating:`5`,
     Calories:`330`,
-},
-    {id:`LT910`,
+},{
+    id:`LT910`,
     type: `Latte`,
     img: `img/product10.jpg`,
     name: `Gingerbread Latte`,
@@ -103,8 +100,8 @@ const productsCoffee=[
     priceNew: `6.99`,
     rating:`4`,
     Calories:`330`,
-},
-    {id:`LT911`,
+},{
+    id:`LT911`,
     type: `Latte`,
     img: `img/product11.jpg`,
     name: `Caffè Latte`,
@@ -112,8 +109,8 @@ const productsCoffee=[
     priceNew: `4.29`,
     rating:`5`,
     Calories:`190`,
-},
-    {id:`LT912`,
+},{ 
+    id:`LT912`,
     type: `Latte`,
     img: `img/product12.jpg`,
     name: `Chestnut Praline Latte`,
@@ -121,8 +118,8 @@ const productsCoffee=[
     priceNew: `6.29`,
     rating:`5`,
     Calories:`330`,
-},
-    {id:`0F913`,
+},{
+    id:`0F913`,
     type: `food`,
     img: `img/product13.jpg`,
     name: `Everything Croissant & Roasted Ham`,
@@ -130,8 +127,8 @@ const productsCoffee=[
     priceNew: `5.29`,
     rating:`5`,
     Calories:`460`,
-},
-    {id:`0F914`,
+},{
+    id:`0F914`,
     type: `food`,
     img: `img/product14.jpg`,
     name: `Spicy Chorizo, Monterey Jack & Egg Sandwich`,
@@ -139,8 +136,8 @@ const productsCoffee=[
     priceNew: `4.19`,
     rating:`4`,
     Calories:`470`,
-},
-    {id:`0F915`,
+},{
+    id:`0F915`,
     type: `food`,
     img: `img/product15.jpg`,
     name: `Spinach, Feta & Cage Free Egg White Wrap`,
@@ -148,8 +145,8 @@ const productsCoffee=[
     priceNew: `7.69`,
     rating:`5`,
     Calories:`280`,
-},
-    {id:`0F916`,
+},{
+    id:`0F916`,
     type: `food`,
     img: `img/product16.jpg`,
     name: `Sous Vide Egg Bites: Ham, Cheddar & Peppers`,
@@ -157,8 +154,8 @@ const productsCoffee=[
     priceNew: `4.59`,
     rating:`4`,
     Calories:`250`,
-},
-    {id:`CC917`,
+},{
+    id:`CC917`,
     type: `Cold-coffee`,
     img: `img/product17.png`,
     name: `Irish Cream Cold Brew`,
@@ -166,8 +163,8 @@ const productsCoffee=[
     priceNew: `7.29`,
     rating:`5`,
     Calories:`473`,
-},
-    {id:`CC918`,
+},{
+    id:`CC918`,
     type: `Cold-coffee`,
     img: `img/product18.jpg`,
     name: `Cold Brew with Salted Cream Cold Foam`,
@@ -175,8 +172,8 @@ const productsCoffee=[
     priceNew: `5.09`,
     rating:`4`,
     Calories:`470`,
-},
-    {id:`IT919`,
+},{
+    id:`IT919`,
     type: `IceTea`,
     img: `img/product19.jpg`,
     name: `Iced Black Tea Latte`,
@@ -184,8 +181,8 @@ const productsCoffee=[
     priceNew: `4.29`,
     rating:`5`,
     Calories:`430`,
-},
-    {id:`HD920`,
+},{
+    id:`HD920`,
     type: `IceTea`,
     img: `img/product20.jpg`,
     name: `Iced Royal English Breakfast Tea Latte`,
@@ -193,8 +190,8 @@ const productsCoffee=[
     priceNew: `5.39`,
     rating:`4`,
     Calories:`390`,
-},
-    {id:`IT921`,
+},{
+    id:`IT921`,
     type: `IceTea`,
     img: `img/product21.jpg`,
     name: `Iced Black Tea`,
@@ -214,7 +211,7 @@ const productsCoffee=[
 // Return: String of HTML (<article>)
 function getProductsCoffeeAsHtmlString(productsCoffee){
     let newDeal = ``;
-  if (productsCoffee.type = `IceTea`) {
+  if (productsCoffee.price < 6) {
     newDeal = `<small class="badge">NEW!</small>`;
   }
 return `<section class="product ${productsCoffee.type}">
@@ -235,7 +232,7 @@ return `<section class="product ${productsCoffee.type}">
       <span>COD: ${productsCoffee.id}</span>
     </div>
     <div class="price">
-        <data value="${productsCoffee.priceNew}"><del>C$ ${productsCoffee.priceOld}</del> <ins>C$ ${productsCoffee.priceNew}</ins></data>
+        <data value="${productsCoffee.priceNew}"> <ins>C$ ${productsCoffee.priceNew}</ins></data>
     </div>
     <div class="product-rating">
       <span >
@@ -262,7 +259,7 @@ return `<section class="product ${productsCoffee.type}">
     </div>
     <button class="buy--btn">ADD TO CART</button>
     <form>
-      <input type="button" value="-" class="minus"><input type="number" name="quantity" min="1" max="auto" size="4">
+      <input class = "num_pro" type="number" name="quantity" min="1" max="auto" size="4">
     </form> 
     <div class="clear"></div>
   </div>
@@ -275,16 +272,14 @@ function renderProducts(arr){
     document.getElementById(`productsCoffee`).innerHTML +=strOfHtml;
 }
 
-
-
  
 /////Function: FILTER
-function filterByName(productCoffee) {  
-    return productCoffee.name.toLowerCase().includes(this.trim().toLowerCase())
+function filterByName(proCoffee) {  
+    return proCoffee.name.toLowerCase().includes(this.trim().toLowerCase())
   }
   
-  function filterByCat(productCoffee) {
-    return productsCoffee.type == this;
+  function filterByCat(prodCoffee) {
+    return prodCoffee.type == this;
   }
   
 
