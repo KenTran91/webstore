@@ -282,6 +282,21 @@ function filterByName(proCoffee) {
     return prodCoffee.type == this;
   }
   
+/////Function Sort
+function compare(a,b){
+  const priceA=a.priceNew;
+  const priceB=b.priceNew;
+  let comparison =0;
+  if (priceA>priceB){
+    comparison =1;} elseif  (priceA<priceB){
+      comparison =-1;
+    }
+    return comparison;
+    const cpar=productsCoffee.sort(compare);
+    renderProducts(cpar);
+    console.log(cpar);
+  }
+}
 
 //**********EXECUTION*************//
 // Execute functions that will access data
@@ -300,7 +315,13 @@ function searchByCat(event) {
     console.log (arrCatCheck);
   }
 
+function  sortItems(event) {
+  const sortTerm = event.target.value;
+  const arrSort = productsCoffee.compare(compare, sortTerm)
+}
+
 renderProducts(productsCoffee);
 
 document.getElementById('nameSearch').addEventListener('input', searchByName)
 document.getElementById('catSearch').addEventListener('change', searchByCat)
+document.getElementById(`sort`).addEventListener(`change`,sortItems)
