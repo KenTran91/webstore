@@ -119,17 +119,25 @@ header img {
 main {
     padding: 2rem;
 }
-
+.product-view-mod {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.3);
+    min-height: 13rem;
+    padding: 1rem;
+}
 
 /* ----- Product Section ----- */
 .product {
 	display: grid;
 	grid-template-columns: 0.9fr 1fr;
     margin-left: 4rem;
+    margin-bottom: 2rem;
 	padding: 2.5em 0;
 	min-width: 600px;
-	background-color: white;
-	border-radius: 5px;
+	background-color: rgb(245, 241, 241);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.3);
 }
 
 /* ----- Photo Section ----- */
@@ -151,7 +159,9 @@ main {
 .photo-main {
 	border-radius: 6px 6px 0 0;
     background-color: #504535;
-	background: radial-gradient(#fff700, #2e0303);
+    background: radial-gradient(#fff700, #2e0303);
+    box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
 }
 .photo-main .controls{
     display: flex;
@@ -163,7 +173,7 @@ main {
     cursor: pointer;
 }
 .photo-main img{
-    min-height: 15rem;
+    max-height: 33rem;
     left: -3.5em;
 	top: 2em;
 	/* max-width: 20rem; */

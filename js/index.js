@@ -212,7 +212,7 @@ const productsCoffee=[
 // Function: getCourseAsHtmlString
 // Parameters: course:Object
 // Return: String of HTML (<article>)
-function getProductsCoffeeAshStr(productsCoffee){
+function getProductsCoffeeAsHtmlString(productsCoffee){
     let newDeal = ``;
   if (productsCoffee.type = `IceTea`) {
     newDeal = `<small class="badge">NEW!</small>`;
@@ -270,35 +270,35 @@ return `<section class="product ${productsCoffee.type}">
 }
 
 function renderProducts(arr){
-    const arrOfHtml = arr.map(getProductsCoffeeAshStr);
+    const arrOfHtml = arr.map(getProductsCoffeeAsHtmlString);
     const strOfHtml = arrOfHtml.join(`\n`);
     document.getElementById(`productsCoffee`).innerHTML +=strOfHtml;
 }
 
-// ////Function: SORT
-// function compare(a,b) {
-//     const priceNewA = a.priceNew.toUperCase();
-//     const priceNewB = b.priceNew.toUperCase();
-//     let comparison =0;
-//     if (priceNewA>priceNewB) {
-//         comparison =1;
-//     } else if (priceNewA < priceNewB){
-//         comparison =-1;
-//     }
-//     return comparison;
-// }
+////Function: SORT
+function compare(a,b) {
+    const priceNewA = a.priceNew.toUperCase();
+    const priceNewB = b.priceNew.toUperCase();
+    let comparison =0;
+    if (priceNewA>priceNewB) {
+        comparison =1;
+    } else if (priceNewA < priceNewB){
+        comparison =-1;
+    }
+    return comparison;
+}
 
 
 
 
 /////Function: FILTER
-function filterByName(productCoffee){
+function filterByName(productCoffee) {  
     return productCoffee.name.toLowerCase().includes(this.trim().toLowerCase())
-}
-
-function filterByCat(productCoffee){
-    return productCoffee.type ==this;
-}
+  }
+  
+  function filterByCat(productCoffee) {
+    return productCoffee.type == this;
+  }
 
 //**********EXECUTION*************//
 // Execute functions that will access data
@@ -315,7 +315,7 @@ function searchByCat(event) {
     renderProducts(arrCatCheck);
   }
 
-renderProducts(productsCoffee)
+renderProducts(productsCoffee);
 
 document.getElementById('nameSearch').addEventListener('input', searchByName)
 document.getElementById('catSearch').addEventListener('change', searchByCat)

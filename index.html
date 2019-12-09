@@ -2,21 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>vietBrothersCoffeeShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vietBrothers-coffeeShop</title>
     <meta name="description" content="[A short description]">
-    <meta name="author" content="[Your Name]">
+    <meta name="author" content="[KenTran]">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <header>
-        <a href="index.html"><img src="img/logo2.png" alt="Logo"></a>
+      <a href="index.html"><img src="img/logo2.png" alt="Logo"></a>
       <div class="topNav">
-          <div class="menuTop">
-              <!-- <img src="img/logo-2.gif" alt="Logo"> -->
-            <div class="dropdown">
+        <div class="menuTop">
+        <!-- <img src="img/logo-2.gif" alt="Logo"> -->
+          <div class="dropdown">
             <button class="dropMenu">Drink</button>
             <div class="dropMenuContent">
               <a href="#">Coffee</a>
@@ -24,69 +24,58 @@
               <a href="#">Bleneded Beverages</a>
               <a href="#">Capuchino</a>
             </div>
-            </div>
-              <a href="#">Food</a>
-              <a href="#">Rewards</a> 
-              <a href="#">Gift Cards</a>
-              <form>
-                  <label>
-                    <input type="search" name="find" id="find">
-                  </label>
-                  <button type="button"><span class="material-icons">search</span></button>
-                </form>
-              <a href="#"><span class="material-icons">favorite_border</span></a>
-              <a href="#"><span class="material-icons">shopping_cart</span></a>
           </div>
-          <div class="clear"></div>
+            <a href="#">Food</a>
+            <a href="#">Rewards</a> 
+            <a href="#">Gift Cards</a>
+            <form>
+              <label>
+                <input type="search" name="find" id="find">
+              </label>
+              <button type="button"><span class="material-icons">search</span></button>
+            </form>
+            <a href="#"><span class="material-icons">favorite_border</span></a>
+            <a href="#"><span class="material-icons">shopping_cart</span></a>
+        </div>
+        <div class="clear"></div>
       </div>   
     </header>
     <main>
       <div class="product-view-mod">
-        <h1>Sale on [Category Name]</h1>
-        <form>
-            <div>
-              <label for="nameSearch">Product:</label>
-              <input type="search" name="productName" id="nameSearch">
-            </div>
-      
-            <div>
-              <label for="catSearch">Category:</label>
-              <select name="categoryName" id="catSearch">
-                <option value="0" disabled selected>-- Select a category --</option>
-                <option value="Brewed-Coffees">Brewed-Coffees</option>
-                <option value="Americano">Americano</option>
-                <option value="Cappuccino">Cappuccino</option>
-                <option value="Espresso">Espresso</option>
-                <option value="Latte">Latte</option>
-                <option value="food">Food</option>
-                <option value="Cold-coffee">Cold-coffee</option>
-                <option value="ice-tea">Ice-tea</option>
-                
-              </select>
-            </div>
-            
-          </form>
+        <div class="result-search-tool">
+            <form>
+                <div>
+                  <label for="nameSearch">Product:</label>
+                  <input type="search" name="productName" id="nameSearch">
+                </div>
+          
+                <div>
+                  <label for="catSearch">Category:</label>
+                  <select name="categoryName" id="catSearch">
+                    <option value="0" disabled selected>-- Select a category --</option>
+                    <option value="Brewed-Coffees">Brewed-Coffees</option>
+                    <option value="Americano">Americano</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Latte">Latte</option>
+                    <option value="food">Food</option>
+                    <option value="Cold-coffee">Cold-coffee</option>
+                    <option value="ice-tea">Ice-tea</option>
+                  </select>
+                </div>
+              </form>
+              <form>
+                  <h2>Filters</h2>
+                  <fieldset>
+                    <label for="sort">Show by</label>
+                    <select name="sort" id="sort">
+                      <option value="price-high">Price, highest to lowest</option>
+                      <option value="price-low">Price, lowest to highest</option>
+                      <option value="newest">Newest releases</option>
+                    </select>
+                  </fieldset>
+        </div>
         <!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
-            <label for="sort">Show by</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
           <fieldset>
             <legend>Sizes</legend>
             <ol>
