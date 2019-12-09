@@ -275,44 +275,34 @@ function renderProducts(arr){
     document.getElementById(`productsCoffee`).innerHTML +=strOfHtml;
 }
 
-////Function: SORT
-function compare(a,b) {
-    const priceNewA = a.priceNew.toUperCase();
-    const priceNewB = b.priceNew.toUperCase();
-    let comparison =0;
-    if (priceNewA>priceNewB) {
-        comparison =1;
-    } else if (priceNewA < priceNewB){
-        comparison =-1;
-    }
-    return comparison;
-}
 
 
-
-
+ 
 /////Function: FILTER
 function filterByName(productCoffee) {  
     return productCoffee.name.toLowerCase().includes(this.trim().toLowerCase())
   }
   
   function filterByCat(productCoffee) {
-    return productCoffee.type == this;
+    return productsCoffee.type == this;
   }
+  
 
 //**********EXECUTION*************//
 // Execute functions that will access data
 
 function searchByName (event){
-    const searchTerm = event.target.value;
-    const arrNameCheck = productsCoffee.filter(filterByName, searchTerm)
-    renderProducts(arrNameCheck);
+  const searchTerm = event.target.value;
+  const arrNameCheck = productsCoffee.filter(filterByName, searchTerm);
+  renderProducts(arrNameCheck);
+  console.table(arrNameCheck);
 }
 
 function searchByCat(event) {
     const searchTerm = event.target.value;
     const arrCatCheck = productsCoffee.filter(filterByCat, searchTerm)
     renderProducts(arrCatCheck);
+    console.log (arrCatCheck);
   }
 
 renderProducts(productsCoffee);
